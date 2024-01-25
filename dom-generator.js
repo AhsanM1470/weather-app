@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Create the daily weather elements
 function createDailyElements(){
     const days = document.querySelector('.days');
-    days.innerHTML = ''; // Clear existing content
+    days.innerHTML = '';
     let currentDate = new Date();
 
     for (let i = 0; i < 7; i++){
@@ -39,7 +39,7 @@ function createDailyElements(){
 // Create the hourly weather elements
 function createHourlyElements(){
     const hours = document.querySelector('.hours');
-    hours.innerHTML = ''; // Clear existing content if any
+    hours.innerHTML = '';
 
     for (let i = 0; i < 24; i++){
         let hourFormat = i.toString().padStart(2, '0') + ':00';

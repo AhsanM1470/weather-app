@@ -135,6 +135,10 @@ body{
     flex-direction: column;
 }
 
+.day-preview{
+    margin-left: 0.2em;
+}
+
 .date {
     margin-bottom: 0.5em;
 }
