@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="/weather-renderer.js"></script>
+    <script src="dom-generator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-bar">
+            <h2>WEATHER</h2>
+        </div>
+        
+        <div class="header">
+            <div class="search-bar">
+                <input type="text" placeholder="Enter a town, city, or country name" id="search-input">
+                <!-- <button><img class="search-icon" src="images/icons/magnifying-glass.png"></button> -->
+            </div>
+        </div>
+        
+        <div class="results">
+            <ul id="list">
+            </ul>
+        </div>
+
+        <div class="daily-weather">
+                <img class="weather-background" src="images/backgrounds/sun-background.png">
+                <div class="weather-nav">
+                    <ul class="days">
+                        <!-- Daily elements inserted dynamically -->
+                    </ul>
+                </div>
+        </div>
+
+        <div class="hourly-weather">
+            <div class="hourly-nav">
+                <div>
+                    <ul class="hours">
+                        <!-- Hourly elements inserted dynamically -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
